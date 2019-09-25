@@ -28,12 +28,21 @@ var hours1, hours2, minutes1, minutes2, payRate, contribution;
 const taxes = .15;
 const disability = .007;
 
+var breakdown = document.getElementById("breakdown");
 
 function init(){
-  var breakdown = document.getElementById("breakdown");
   breakdown.style.visibility = "hidden";
   document.getElementById("predictPay").innerHTML = "...";
 }
+
+var healthIns = (document.getElementById('healthIns').checked ? 39.23 : 0 );
+  
+  // if(healthIns.checked){
+  //   healthIns = 39.23;
+  // } else {
+  //   healthIns = 0;
+  // }
+
 
 
 function getPaid()
@@ -81,12 +90,8 @@ function getPaid()
   var uncleSam = taxes * taxableIncome;
 
   // If box is checked, value of healthIns is 39.23; if not, it's el zilcho
-  if(document.getElementById('healthIns').checked){
-    healthIns = 39.23;
-  } else {
-    healthIns = 0;
-  }
-
+  
+  
 
   var paycheck = taxableIncome - (healthIns + hurtYerself + uncleSam); 
 
