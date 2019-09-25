@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/paycheck.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet"> 
+
+        <!-- CAN'T BELIEVE THERE'S A FONT CALLED BITTER  -->
+        
+
+        <meta charset="utf-8">
+        <title> Trader Salvio's Paycheck Predictor</title>
+
+    </head>
+
+<body>
+
+        <h1> PAYCHECK PSYCHIC</h1>
+    </div>
+
+    <div class="calcForm">
+        <form id="payCalc">
+            <h3> Log the hours you worked </h3>
+                <p> Week 1: <input type="text" id="hours1" value="0" size="2"> hours and <input type="text" id="minutes1" value="0" size="2"> minutes.<br>
+                Week 2: <input type="text" id="hours2" value="0" size="2"> hours and <input type="text" id="minutes2" value="0" size="2"> minutes.
+            <br>
+            <br>
+            <h3> Additional Information Required: </h3>
+                <p>Pay rate: $<input type="text" id="payRate" value="0.00" size="5"> per hour</p>
+        
+                <p>401k Contribution: <input type="text" id="contribution" value="0" size="2">%*</p>
+                <p class="footnote"> *If none, put zero</p>
+            
+                <p>Do you have insurance through Trader Joe's? 
+                <input type="radio" name="insurance" id="healthIns" value="39.23"/> Yes
+                <input type="radio" name="insurance" id="noIns" value="0"/> No </p>
+            <br>
+            <input type="button" onclick="getPaid()" value="How much will I get paid?"> <input type="reset" onclick="init()" value="Lemme try again">
+        </form>
+    
+    
+    <div class="resultForm">
+        <div class="payDisplay">
+        <h3 class="result">Your next paycheck will be about...</h3>
+            <h1 id="predictPay"> ... </h1>
+        
+            <div id="breakdown">
+
+                <p id="breakdown"> 
+                    You worked <span id="hrsWorked">___</span> hours this pay period.</p>
+                <p id="breakdown"> 
+                    You'll contribute <span id="retire">___</span> to your retirement account.
+                </p> 
+                <p id="breakdown"> 
+                    About <span id="disability">___</span> will be taken out in the event that you hurt yourself at work.
+                </p> 
+                <p id="breakdown">
+                    Uncle Sam will take about<span id="uncleSam">___</span> for all those potholes they'll never fix.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="resources/js/paycheck.js"></script>
+
+</body>
+</html>
