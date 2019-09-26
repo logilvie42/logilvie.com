@@ -21,7 +21,6 @@
 "use strict";
 
 //declare all variables
-
 var hours1, hours2, minutes1, minutes2, payRate, contribution;
 
 // Hard numbers and percentages
@@ -34,15 +33,6 @@ function init(){
   breakdown.style.visibility = "hidden";
   document.getElementById("predictPay").innerHTML = "...";
 }
-
-var healthIns = (document.getElementById('healthIns').checked ? 39.23 : 0 );
-  
-  // if(healthIns.checked){
-  //   healthIns = 39.23;
-  // } else {
-  //   healthIns = 0;
-  // }
-
 
 
 function getPaid()
@@ -61,8 +51,11 @@ function getPaid()
   // Retrieve retirement contribution percentage and turn into decimal
   contribution = (Number(document.getElementById("contribution").value)) / 100;
 
-  //Add up all the hours into one number which will be rounded to 2 decimal places
+ 
 
+  var healthIns = parseFloat(document.querySelector('input[name = "insurance"]:checked').value);
+
+ //Add up all the hours into one number which will be rounded to 2 decimal places
   function hoursWorked() {
     let totalHours = hours1 + hours2;
     let totalMinutes = minutes1 + minutes2;
@@ -73,7 +66,6 @@ function getPaid()
   var hoursWorked = (hoursWorked(hours1, hours2, minutes1, minutes2)).toFixed(2);
 
   // Play with all the pre-tax money
-  
   function taxableIncome(){
     let untaxedMoney = (payRate * hoursWorked).toFixed(2);
     let retire = (untaxedMoney * contribution).toFixed(2);
@@ -88,16 +80,8 @@ function getPaid()
   document.getElementById("disability").innerHTML  = ` $${hurtYerself.toFixed(2)} `;
 
   var uncleSam = taxes * taxableIncome;
-
-  // If box is checked, value of healthIns is 39.23; if not, it's el zilcho
-  
-  
-
   var paycheck = taxableIncome - (healthIns + hurtYerself + uncleSam); 
 
-  // alert(`You worked ${hoursWorked.toFixed(2)} hours this pay period. After all the pretax deductions, you were left with $${taxableIncome} for the government to siphon from! Your employer deducted $${hurtYerself.toFixed(2)} in the event that you'd hurt yourself and Uncle Sam took $${uncleSam.toFixed(2)} for Trump's spray tan fund, leaving you with a piddly $${paycheck.toFixed(2)} to spend at your leisure. Ain't life grand?`);
-
-    
     document.getElementById("predictPay").innerHTML = ` $${paycheck.toFixed(2)} `;
     document.getElementById("hrsWorked").innerHTML = ` ${hoursWorked}`;
    
@@ -105,7 +89,3 @@ function getPaid()
 }
 
 init();
-
-
-
-// 
