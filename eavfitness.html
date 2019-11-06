@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Village Fitness is the one-stop source for your overall fitness and wellness.">
+        <link rel="stylesheet" type="text/css" href="resources/css/fitness.css">  
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:300&display=swap" rel="stylesheet"> 
+        <script src="resources/js/fitness.js"></script> 
+        <script src="https://kit.fontawesome.com/a0fbef6f47.js" crossorigin="anonymous"></script>
+
+        <title> Village Fitness </title>
+
+
+    </head>
+
+<header id="landingPage">
+    <button class="btn" onclick="informMe()"><i class="fas fa-info-circle" id="infoTag"></i></button>
+   
+    <div id="infoBox">
+         I've been going to East Atlanta Village Fitness for years. In the process of finding a business's website to redesign, I decided to check <a href="www.getfitinthevillage.com">their site</a> out and found that their website wasn't mobile compatible at all. It turned out to be a perfect mobile-first project!  
+    </div>
+    
+    
+    <img src="resources/img/eavlogo.png" class="logo">
+
+
+</header>
+
+<!-- SECTION: Home Menu  -->
+<nav>  
+<div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="far fa-times-circle"></i></a>
+    
+        <div class="overlay-content">
+                <a href="#about">About</a>
+                <a href="#amenities"> Amenities</a>
+                <a href="#memberships">Memberships</a>
+                <a href="#trainers">Trainers</a>
+                <a href="#classes">Classes</a>
+        </div>
+    </div> 
+    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+</nav>
+
+
+
+
+
+
+<!-- SECTION: About-->
+<section class="section-about js-section-about">
+    <h2 id="about">About</h2>
+    <div class="infoList">
+            <h3> Staffed Hours </h3>
+            <p> Monday - Friday  8am - 8pm <br>
+                Saturday 9am - 5pm <br>
+                Sunday 1pm - 5pm </p>
+
+
+            <h3> Locations</h3>
+            <h4> East Atlanta </h4>
+            <p>1231 Glenwood Ave SE, Atlanta, GA 30316<br>
+            <a href="tel:770-841-8993">770-841-8993</a> <br>
+            <a href="mailto:info@eavillagefitness.com">info@eavillagefitness.com</a></p>
+
+            <h4> East Cobb</h4>
+            <p>1275 Powers Ferry Road, Marietta, GA<br>
+            <a href="tel:770-841-8993">770-841-8993</a> <br>
+            <a href="mailto:info@ecvillagefitness.com">info@ecvillagefitness.com</a></p>
+    </div>       
+</section>
+
+
+<!-- SECTION: Amenities-->
+
+<section class="section-amenities">
+    
+        <h2 id="amenities"> Amenities</h2>
+        
+            <ul class="infoList">
+                <li> Open 24 hours a day, 7 days a week</li>
+                <li> Matrix Equipment</li>
+                <li> State of the art cardio equipment</li>
+                <li> Circuit Training</li>
+                <li> Large free weight area</li>
+                <li> Locker rooms with showers</li>
+                <li> Dedicated parking</li>
+                <li> Free Wi-fi</li>
+                <li> Tanning </li>
+                <li> Personal Training</li>
+                <li> Group Classes</li>
+                <li> Online Wellness and Fitness Programs </li>
+                <li> Power Lifting Room</li>
+                <li>Outside Obstacle Course</li>
+            </ul>
+       
+</section>
+
+<!-- SECTION: gallery -->
+<!-- <section class="gallery">
+        <ul>
+                <li><img src="img/front.jpg" title="East Atlanta Location"></li>
+                <li><img src="img/interior1.jpg" title="Free weight area"></li>
+                <li><img src="img/interior2.jpg" title="Cable machines available"></li>
+                <li><img src="img/interior3.jpg" title="Great area for bodyweight workouts"></li>
+            </ul>
+</section> -->
+
+<!-- SECTION: membership plan -->
+
+<section class="section-membership">
+
+  <h2 id="memberships">Memberships</h2>
+   
+        <div class="container">
+     
+        <div class="prices">
+            <h3 class="signupHeader">12 Month Plan</h3>
+            <p><span class="plan-price">$24.99</span> a month*</p>
+            <ul>
+                <li> $59 Enrollment fee</li>
+                <li> $20 Key card fee</li>
+                <!-- <i class="fas fa-plus"></i> -->
+                <li>$49.98 First and last month's payments</li>
+            </ul>
+            <p class="totalLine"> $128.99 total</p>
+        <a class="btn" href="https://www.clubready.com/getstarted/step1.asp?s=1153&id=65698"><h2>Sign Up</h2></a>
+        </div>
+        
+        <br>
+
+        <div class="prices">
+                <h3 class="signupHeader"> 24 Month Plan</h3>
+                <p><span class="plan-price">$19.99</span> a month*</p>
+                <ul>
+                    <li> $59 Enrollment fee</li>
+                    <li> $20 Key card fee</li>
+                    <!-- <i class="fas fa-plus"></i> -->
+                    <li>$39.98 First and last month's payments</li>
+                </ul>
+                <p class="totalLine"> $118.98 total</p>
+            <a class="btn" href="https://www.clubready.com/getstarted/1153/157717/"> <h2>Sign Up </h2></a>
+        </div>
+
+        <br>
+
+        <div class="prices">
+                <h3 class="signupHeader"> Month-to-Month Plan</h3>
+               <p><span class="plan-price">$29.99</span> a month*</p>
+                <ul>
+                    <li> $99 Enrollment fee</li>
+                    <!-- <i class="fas fa-plus"></i> -->
+                    <li> $20 Key card fee</li>
+                </ul>
+                <p class="totalLine"> $148.99 total</p>
+        <a class="btn" href="https://www.clubready.com/getstarted/1153/65696/"><h2>Sign Up </h2></a>
+        </div>
+
+        <br>
+
+        <div class="prices">
+            <h3 class="signupHeader"> Paid in Full Membership</h3>
+            <p><span class="plan-price">$349</span> for an entire year*</p>
+             <a class="btn" href="https://www.clubready.com/getstarted/step1.asp?s=1153&id=65707"> <h2>Sign Up</h2></a>
+
+        </div>
+    
+
+        <br>
+        <p>*All Memberships receive a FREE 1 hr Fitness Evaluation and Personal Training Session </p>
+    
+    </div>
+
+
+</section>
+
+<!-- SECTION: trainers -->
+<section class="section-trainers">
+        <h2 id="trainers"> Trainers</h2>
+        <div class="container">
+            <div class="trainer">
+                    <h3> Reggie Swindell <br> Personal Training Director</h3>
+                <img src="resources/img/reggie.jpg" alt="Reggie Swindell, Personal Training Director">
+
+                <p class="trainerBox">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos. </p>
+            </div>
+        <div class="trainer">
+            <h3>Shecky Benham <br> PT Manager and Personal Trainer</h3>
+            <img src="resources/img/shecky.jpg" alt="Shecky Benham, PT Manager and Personal Trainer">
+             
+            <p class="trainerBox">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos. 
+            </p>                    
+        </div>
+        
+        <div class="trainer">
+            <h3>Rick McCoy</h3>
+            <img src="resources/img/rick.jpg" alt="Rick McCoy, Personal Trainer">
+            
+            <p class="trainerBox"> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos. </p>
+        </div>
+
+        <div class="trainer">
+            <h3>Blake Burgess</h3>
+            <img src="resources/img/blake.jpg" alt="Blake Burgess, Personal Trainer">
+            
+            <p class="trainerBox">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
+        </div>
+
+        <div class="trainer">
+            <h3>Julia Allen</h3>
+            <img src="resources/img/julia.jpg" alt="Julia Allen, Personal Trainer">
+            
+            <p class="trainerBox">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: Group Classes-->
+<section class="section-classes">
+       <h2 id="classes">Group Classes</h2>
+    <div class="container">
+        <p class="infoList">There's strength in numbers, especially in our group classes. From yoga to TRX to SPIN, there's one to fit your goals. Even better, they're packed with motivated, not-afraid-to-sweat people who'll inspire and push you. <br>Classes times varies based off demand and instructor availability. Classes are scheduled each week and run from 6 am to 8 pm.</p>
+        <br>
+        <iframe src="https://calendar.google.com/calendar/embed?src=it0cvmpgt5nihmp50bsh2cs304%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
+        <br>              
+    </div>
+  
+    
+</section>
+
+<footer>
+    
+        <p class="footMessage"> Follow us and keep in touch!</p>
+        <br>
+        <a href="https://www.facebook.com/getfitinthevillage/"><i class="fab fa-facebook-f socialLinks"></i></a>
+            <a href="https://www.instagram.com/eavillagefitness/"><i class="fab fa-instagram socialLinks"></i></a>
+            
+            <a href="m.me/getfitinthevillage"><i class="far fa-envelope socialLinks"></i></a>
+            <br>
+           
+
+            <p class="fauxCopyright"> Copyright &copy; 2019 by logilvie. All rights reserved.
+</footer>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*****************/
+/*    FONTS      */
+/*****************/
+
+/* font-family: 'Heebo', sans-serif; */
+
+
+/*----------------------------*/
+/*           GENERAL          */
+/*----------------------------*/
+
+html {  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/interior5.jpg");
+  
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-padding-top: 20%;
+}
+
+
+body { 
+    padding-top: 10%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+
+section { margin: 20% 0 20% 0;}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+/* h2::before {
+    display: inline-block;
+    content: " ";
+    margin-top: -10%;
+    height: 30px;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 3;
+} */
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #D81B19;
+    content: " "; 
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+p {
+    display: inline-block;
+    margin: 2%;
+    padding: 5%;
+}
+
+
+/*----------------------------*/
+/*      HEADER                */
+/*----------------------------*/
+header {
+    background: #D81B19;
+}
+
+.fa-info-circle{
+    position: absolute;
+    left: 80%;
+    color: #818181;
+    font-size: 200%;
+}
+
+#infoBox {
+    font-family: 'Catamaran', sans-serif;
+    position: absolute;
+    color: aqua;
+    background: #818181;
+    border: 2px solid #fff;
+    border-radius: 5%;
+    padding: 5%;
+    top: 10%;
+    width: 80%;
+    left: 10%;
+    z-index: 999;
+    display: none;
+}
+
+.logo {
+    margin-top: 50%;
+    margin-bottom: 60%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*----------------------------*/
+/*      GALLERY               */
+/*----------------------------*/
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/*----------------------------*/
+/*      COLLAPSIBLE BITS      */
+/*--- Save for desktop/ipad version-----*/
+/* 
+.collapsible{
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.active,
+.collapsible:hover{
+    background-color: transparent;
+}
+
+.container{
+    overflow: hidden;
+    background: transparent;
+} */
+
+
+
+
+
+
+/*----------------------------*/
+/*           HOME            */
+/*----------------------------*/
+
+nav {  
+    position: sticky;
+    position: -webkit-sticky; 
+    height: 80px;
+    width: auto; 
+    background: #D81B19;
+    top: 0;
+    margin-top: -10%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    z-index: 999;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#main {
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.logo2{
+    max-width: 0;
+    overflow: hidden;
+    background:transparent;
+    transition: all .5s;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    offset: 50px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 60px;
+}
+
+
+.fa-bars{
+    position: absolute;
+    font-size: 250%;
+    color: #fff;
+    top: 25%;
+    right: 10%;
+}
+
+#eavlogo {
+    position: absolute;
+    right: 55%;
+    padding: 5%;
+    height: 150px;
+    width: 205px;  
+ 
+}
+
+
+
+/*----------------------------*/
+/*           ABOUT            */
+/*----------------------------*/
+
+.section-about{ padding: 50% 0;}
+
+#about { padding-bottom: 20%;}
+
+.infoList {
+    display: block;
+    background: rgb(54, 53, 53);
+    border: 2px solid #D81B19;
+    border-radius: 7%;
+    padding: 5%;
+    margin: 5%;
+}
+
+.section-about a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.section-about h3 { 
+    color: #D81B19;
+    margin-bottom: -6%;
+}
+
+.section-about h4 { margin: 5% 0 -7% 0;}
+
+
+
+/*----------------------------*/
+/*         AMENITIES          */
+/*----------------------------*/
+.section-amenities{
+    padding: 50% 0;
+}
+
+#amenities {
+    padding-bottom: 20%;
+}
+
+.section-amenities ul { 
+    list-style: none;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+
+/*----------------------------*/
+/*          MEMBERSHIP        */
+/*----------------------------*/
+
+
+.section-membership{ 
+    background:  rgb(54, 53, 53);
+    padding: 50% 0;
+}
+
+
+/* .section-membership .container {
+    padding-top: 30%;
+} */
+
+#memberships { padding-bottom: 20%;}
+
+.section-membership span { color: #D81B19;}
+
+.prices{ 
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding-bottom: 5%;
+    align-items: center;
+    background-color: rgb(240, 239, 239);
+    border: 3px solid #D81B19;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px rgb(129, 127, 127);
+    width: 75%;
+    margin: auto;
+}
+
+.plan-price {font-size: 300%;}
+
+.prices ul {
+    list-style: none;
+    padding: 2%;
+}
+
+.prices ul::after{
+    display: block;
+    height: 1px;
+    background-color: #D81B19;
+    content: " "; 
+    width: 100%;
+}
+
+.prices li { text-align: justify;}
+
+
+.totalLine {
+    display: inline-block;
+    font-size: 300%;
+}
+
+.signupHeader{
+    text-align: center;
+    padding-top: 10%;    
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #D81B19;
+    color: #fff;
+    text-decoration: none;
+    border: #D81B19;
+    box-shadow: 2px 2px 2px rgb(105, 22, 21);
+    border-radius: 5%;
+    width: 40%;
+    z-index: 5;
+}
+
+/*----------------------------*/
+/*         TRAINERS           */
+/*----------------------------*/
+
+.section-trainers{ padding: 50% 0;}
+
+.trainer img { 
+    border-radius: 5%;
+    margin: 3% 0 3% 0;
+}
+
+
+.trainerBox {
+    display: inline-block;
+    background: rgb(54, 53, 53);
+    border: 2px solid #D81B19;
+    border-radius: 7%;
+    padding: 5%;
+    margin: 0 5% 5% 5%;
+}
+
+
+
+.trainer h3 {  
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5% 0 1% 0;
+}
+
+
+/*----------------------------*/
+/*         Group Classes      */
+/*----------------------------*/
+
+.section-classes {
+    background:  rgb(54, 53, 53);
+    padding: 50% 0;
+}
+
+#classes {padding-bottom: 15%;}
+
+.section-classes .infoList{ margin-bottom: 15%;}
+
+
+iframe {
+    border: 2px solid #D81B19;
+    width: 462px;
+    height: 600px;
+}
+
+/*----------------------------*/
+/*         Footer             */
+/*----------------------------*/
+
+footer { 
+    background: #D81B19;  
+    height: 250px;
+    width: auto;}
+
+.socialLinks {
+    padding-top: 5%;
+    font-size: 300%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.fa-instagram {margin-left: 10%;}
+.fa-envelope {margin-left: 10%;}
+
+
+.footMessage {
+    margin-top: 2%;
+    margin-bottom: -4%;
+}
+
+
+
+
+
+
+
